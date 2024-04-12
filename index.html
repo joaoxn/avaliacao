@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação</title>
     <style>
+
+        body > * {
+            font-family: sans-serif;
+        }
+
         #header {
-            background-color: black;
+            width: 1;
+            height: auto;
+            display: flex;
+            padding: 2rem;
+            background-color: rgb(50, 50, 50);
+            color: white;
+            font-family: sans-serif;
+            font-size: large;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .sectionImgText {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sectionImgText * {
+            margin: 1rem;
+        }
+
+        .sectionImgText > .image {
+            width: 300px;
+            height: 300px;
+            border-radius: 3%;
+        }
+
+        .sectionImgText > .sectionText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sectionImgText > .sectionText > p {
+            font-size: x-large;
         }
     </style>
 </head>
+
 <body>
 
-    <header id="header"></header>
-    
+    <header id="header"><span>João Victor de Souza - Turma 2B</span></header>
+    <div class="sectionImgText">
+        <img class="image" src="assets/image.jpeg">
+        <div class="sectionText">
+            <h1 class="title">Avaliação</h1>
+            <p>Fundamentos de TI <br> Data: 12/04/2024 <br>
+            Dia da Semana: Sexta-feira</p>
+        </div>
+    </div>
+
 </body>
+
 </html>
